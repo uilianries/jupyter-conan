@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/uilianries/jupyter-conan.svg?branch=master)](https://travis-ci.org/uilianries/jupyter-conan)
 # Jupyter Conan
 
 Live documentation for Conan, running over notebook.
