@@ -1,0 +1,16 @@
+sudo: required
+
+language: python
+
+services:
+  - docker
+
+install:
+  - pip install docker-compose
+before_script:
+  - docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}
+script:
+  - docker-compose build
+  - docker-compose up -d
+after_script:
+  - docker-compose push
